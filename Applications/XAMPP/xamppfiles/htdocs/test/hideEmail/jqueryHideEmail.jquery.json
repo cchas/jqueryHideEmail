@@ -1,0 +1,28 @@
+{
+    "name": "jqueryHideEmail",
+    "title": "Hide your email from SPAMBots",
+    "description": "Dead simple method to prevent SPAMbots from reading email accounts from your website.",
+    "keywords": [
+        "SPAM",
+        "Email",
+        "Obfuscation"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "César Chas",
+        "url": "https://github.com/cchas/jqueryHideEmail"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/cchas/jqueryHideEmail"
+        }
+    ],
+    "bugs": "https://github.com/cchas/jqueryHideEmail/issues",
+    "homepage": "https://github.com/cchas/jqueryHideEmail",
+    "docs": "https://github.com/cchas/jqueryHideEmail",
+    "download": "https://github.com/cchas/jqueryHideEmail/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
