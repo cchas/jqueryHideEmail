@@ -1,0 +1,51 @@
+<html>
+  <head>
+  	<title>HideEmail Plugin | Hide your email from Spambots</title>
+	</head>
+	
+	<body>
+		
+		<h1>Hide your email from Spambots</h1>
+		
+		<p>This plugin transforms links like &lt;a data-myattr="account,domain.com" href="#"&gt;account@domain.com&lt;/a&gt; into <a mailto:"account@domain.com" href="#">account@domain.com</a></p>
+		
+		<p>Use emails wherever in your doc: </p>
+		
+		<p>
+			<a class="email" data-other="aa" id="id_email" data-email="account,domain.com" href="#">Email</a><br>
+			
+			<a class="email" data-email="account2,domain.com" href="#">Email 2</a><br>
+			
+			<a class="email" data-email="account3,domain.com" href="#">Email 3</a><br>
+		</p>
+		
+		<p>You can use it as many times as you want in your document. You may also use chaining if needed, for example to style mailto links differently.</p>
+		
+		<p><a href="" title="Download source">Download</a> source</p>
+		
+		<p><a id="#activar">Activar</a></p>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+		<script src="jquery.hideEmail.js"></script>
+		
+		<script>
+			
+			$(function(){
+
+				/* WITH CUSTOM SETTINGS
+				$('a.email').hideEmail({
+					attr: 'data-email',
+					sep: ','
+				});
+				*/
+
+				// DEFAULT SETTINGS
+				$('a[data-email]').hideEmail();
+
+			});
+			
+		</script>
+			
+	</body>
+</html>
